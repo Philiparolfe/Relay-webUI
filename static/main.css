@@ -1,0 +1,221 @@
+/* style.css */
+
+/* Reset all margins and paddings */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #F5B7B1;
+  font-family: "Open Sans", sans-serif;
+  min-height: 100%;
+}
+
+/* Style the header */
+header {
+  background-color: #c5c5c5;
+  border-style: groove groove solid groove;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* Remove margin from h1 */
+
+
+/* Style the main content area */
+main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 3px solid;
+  border-top: none;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+
+  margin: 0 10rem 0 10rem;
+}
+
+.container {
+  display: inline-block;
+
+
+}
+
+/* Style the button */
+.button-54 {
+  font-family: "Open Sans", sans-serif;
+
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 5em;
+  margin: 1rem 0 0.5rem 0;
+
+}
+
+/* Style the button when it is clicked */
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  background-color: #e0e0e0;
+  top: 5px;
+  left: 5px;
+}
+
+/* Style the heading */
+h3 {
+  margin-top: 1em;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+table {
+
+  align-self: center;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  gap: calc(10% + 20px);
+
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+
+/* Style the button */
+input[type="submit"] {
+  font-family: "Open Sans", sans-serif;
+
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  
+  width: 5em;
+  margin: 1em 0 0.5em 0;
+}
+
+/* Style the button when it is clicked */
+input[type="submit"]:active {
+  box-shadow: 0px 0px 0px 0px;
+  background-color: #e0e0e0;
+  top: 5px;
+  left: 5px;
+}
+
+/* Style the heading */
+h3 {
+  margin-top: 1em;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+table {
+  margin: 0 auto;
+  /* or margin: 0 auto 0 auto */
+  align-self: center;
+  position: relative;
+}
+
+table,
+th,
+td {
+  border: none;
+
+  text-align: center;
+  padding: 2rem;
+  font-size: x-large;
+}
+
+.divide {
+  border-top: 3px solid;
+}
+
+td {
+  text-align: center;
+  align-self: center;
+}
+div#copyright {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 5px;
+    /* And if you want the div to be full-width: */
+    left: 0;
+    right: 0;
+
+}
+
+/* 2532x1080 pixels at 476ppi */
+@media only screen and (-webkit-min-device-pixel-ratio: 3),
+only screen and (min--moz-device-pixel-ratio: 3),
+only screen and (-o-min-device-pixel-ratio: 3/1),
+only screen and (min-device-pixel-ratio: 3) {
+
+  input[type="submit"] {
+    appearance: none;
+    -webkit-appearance: none;
+
+
+  }
+
+  main {
+    min-height: 70%;
+    
+  }
+
+  td {
+    display: flex;
+    flex-direction: column;
+
+
+  }
+
+  form {
+
+
+    
+    padding: inherit;
+  }
+
+  form:nth-child(even) {
+    border-top: 2px solid;
+  }
+
+  .button-54 {
+    font-size: inherit;
+    letter-spacing: 5px;
+    width: -webkit-fill-available;
+    height: 4em;
+
+  }
+}

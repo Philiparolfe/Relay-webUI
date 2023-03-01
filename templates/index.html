@@ -1,0 +1,70 @@
+{% extends 'layout.html' %}
+{% block title %}
+Index Page
+{% endblock %}
+{% block content %}
+
+
+<main>
+    <div class="container">
+        <table>
+            <caption>Relay Control</caption>
+
+            <tr class="divide">
+
+                <td>
+                    <label for="On">
+                        <h5></h5>Relay 1</h5>
+                    </label>
+                    <form action="http://10.0.0.55:5000/on/0"><input class="button-54" type="submit" value="On " />
+                    </form>
+                    <form action="http://10.0.0.55:5000/off/0"><input class="button-54" type="submit" value="Off " />
+                    </form>
+
+                </td>
+
+
+                <td>
+                    <label for="On">
+                        <h5></h5>Relay 2</h5>
+                    </label>
+                    <form action="http://10.0.0.55:5000/on/1"><input class="button-54" type="submit" value="On " />
+                    </form>
+                    <form action="http://10.0.0.55:5000/off/1"><input class="button-54" type="submit" value="Off " />
+                    </form>
+
+                </td>
+            </tr>
+            <tr class="divide">
+
+                <td>
+                    <label for="On">
+                        <h5></h5>Relay 3</h5>
+                    </label>
+                    <form action="http://10.0.0.55:5000/on/2"><input class="button-54" type="submit" value="On " />
+                    </form>
+                    <form action="http://10.0.0.55:5000/off/2"><input class="button-54" type="submit" value="Off " />
+                    </form>
+
+                </td>
+
+
+                <td>
+                    <label for="On">
+                        <h5></h5>Relay 4</h5>
+                    </label>
+                    <form action="http://10.0.0.55:5000/on/3"><input class="button-54" type="submit" value="On " />
+                    </form>
+                    <form action="http://10.0.0.55:5000/off/3"><input class="button-54" type="submit" value="Off " />
+                    </form>
+
+                </td>
+            </tr>
+
+
+        </table>
+
+
+</main>
+</div>
+{% endblock %}
