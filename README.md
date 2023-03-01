@@ -1,4 +1,4 @@
-# HTML Documentation for Relay Control Table
+# Relay Control WebUI
 This document provides a brief documentation for the HTML code snippet given above. This code snippet includes a table of four relays with their ON and OFF buttons.
 # Flask App Documentation
 This is a Flask app that controls relays using the relay_module.
