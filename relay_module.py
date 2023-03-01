@@ -24,13 +24,19 @@ def blinker(time_delay, relay_sel, blinks):
 def switchOn(relay_sel):
     if relays[relay_sel].is_active == False:
         relays[relay_sel].on()
-        print(f'Relay:{relay_sel}\tStatus:{relays[relay_sel].value}')
+        print(f'Relay:{relay_sel + 1}\tStatus:{relays[relay_sel].value}')
     else:
         print('Invalid relay selection !!!')
     
 def switchOff(relay_sel):
     if relays[relay_sel].is_active:
         relays[relay_sel].off()
-        print(f'Relay:{relay_sel}\tStatus:{relays[relay_sel].value}')
+        print(f'Relay:{relay_sel + 1}\tStatus:{relays[relay_sel].value}')
     else:
         print('Invalid relay selection !!!')
+
+def is_on(relay_sel):
+    if relays[int(relay_sel)].is_active:
+        return f'green'
+    else:
+        return f'red'
